@@ -9,15 +9,15 @@
       <img src="img/logo_gllacy.svg" width="154" height="64" alt="Logo Gllacy Shop">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li> <a href="catalog.html">Каталог</a> <!-- Вопрос. НЕ поняла из ТЗ -  при подведении выпадающий список, а при нажатии переходим в общий каталог?!-->
-              <ul class="sub-menu catalog">
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-          </li>
+          <li class="menu-item"> <a href="catalog.html">Каталог</a>
+            <ul class="sub-menu catalog">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+           </ul>
+        </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="company_info.html">О Компании</a></li>
         </ul>
@@ -29,41 +29,42 @@
         </nav>
       </header>
     <h1 class="visually-hidden"> Магазин Глэйси </h1 >
-      <div class="main_slider" width: "1065"  height: "859">
-        <img src="http://placehold.it/106x85" alt="Временная заглушка Слайдер"> <!-- Я не уверена, конечно, что тут нужна заглушка!-->
+      <div class="main_slider">
+        <img src="http://placehold.it/106x85" alt="Временная заглушка Слайдер">
       </div>
       <div>
         <ul class="toppings_promotion">
-          <li><a href="#">Малиновый топпинг</li>
-          <li><a href="#">Шоколадный топпинг</li>
+          <li><a class="button_top" href="Raspberry_topping_Buy.html"> <img src="http://placehold.it/20x20" width="20" height="20" alt="Raspberry topping Buy - временная заглушка"> Малиновый топпинг</a></li>
+          <li><a class="button_top" href="Chocolate_topping_Buy.html"> <img src="http://placehold.it/20x20" width="20" height="20" alt="Chocolate topping Buy - временная заглушка"> Шоколадный топпинг
+          </a></li>
         </ul>
       </div>
-    <section>
+    <section> <h2 class="visually-hidden"> Хиты продаж </h2>
         <ul class="top_sales">
-          <li><a class="top_sale_1" href="#">Хит 1</li>
-          <li><a class="top_sale_2" href="#">Хит 2</li>
-          <li><a class="top_sale_3" href="#">Хит 3</li>
-          <li><a class="top_sale_4" href="#">Хит 4</li>
+          <li><a class="top_sale_1" href="#">Хит 1</a></li>
+          <li><a class="top_sale_2" href="#">Хит 2</a></li>
+          <li><a class="top_sale_3" href="#">Хит 3</a></li>
+          <li><a class="top_sale_4" href="#">Хит 4</a></li>
         </ul>
       </section>
-      <section class="features"> <!-- Вопрос. Почему-то весь раздел class="features" попал под ссылку из предыдущего блоке #Хит4 -->
+      <section class="features">
         <h2 class="visually-hidden"> Преимущества </h2>
           <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
          	  <ul class="features-list">
   		        <li class="feature-item">
-                <img src="img/pic_ice cream.svg" width="49" height="49" alt="Pictogram Ice Cream">
+                <img src="img/ice-cream.svg" width="49" height="49" alt="Pictogram Ice Cream">
                 <p> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="feature-item">
-                <img src="img/pic_eco.svg" width="49" height="49" alt="Pictogram Eco">
+                <img src="img/eco.svg" width="49" height="49" alt="Pictogram Eco">
                 <p> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
               </li>
               <li class="feature-item">
-                <img src="img/pic_cow.svg" width="49" height="49" alt="Pictogram Cow">
+                <img src="img/cow.svg" width="49" height="49" alt="Pictogram Cow">
                 <p> Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="feature-item">
-                <img src="img/pic_temperature.svg" width="49" height="49" alt="Pictogram Temperature">
+                <img src="img/thermometer.svg" width="49" height="49" alt="Pictogram Temperature">
                 <p> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
               </li>
   	        </ul>
@@ -77,7 +78,7 @@
                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           </section>
           <div class="main_map">
-            <img src="http://placehold.it/130x43" alt="Временная заглушка Карта"> <!-- Я не уверена, конечно, что тут нужна заглушка!-->
+            <img src="http://placehold.it/130x43" alt="Временная заглушка Карта">
           </div>
           <footer class="main-footer">
             <div class="footer-social">
@@ -89,18 +90,20 @@
               </ul>
             </div>
             <section class="footer-additional info">
-              <p class="visually-hidden"> Дополнительная информация</p>
+              <h4 class="visually-hidden"> Дополнительная информация</h4>
               <img src="img/pic_heart.svg" width="15" height="13" alt="Pictogram Heart">
               <ul class="footer links">
-                <li><a href="for suppliers.html">Для поставщиков</li>
-                <li><a href="our documents.html">Наши документы</li>
-                <li><a href="production info.html">О производстве</li>
-                <li><a href="eco standarts.html">Экологические стандарты</li>
+                <li><a href="for_suppliers.html">Для поставщиков</a></li>
+                <li><a href="our_documents.html">Наши документы</a></li>
+                <li><a href="production_info.html">О производстве</a></li>
+                <li><a href="eco_standarts.html">Экологические стандарты</a></li>
               </ul>
             </section>
-            <p class="footer-copyright"> <!-- Как я поняла из ТЗ ссылки должно быть две: лого, текст?!-->
-              <a href="https://htmlacademy.ru/intensive/htmlcss"<img src="http://placehold.it/10x10" width="10" height="10" alt="Pictogram HTML Logo-Временная заглушка">
-            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a></p>
+            <p class="footer-copyright">
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/10x10" width="10" height="10" alt="Pictogram HTML Logo-Временная заглушка"></a>
+                <span><a class="button" href="https://htmlacademy.ru/intensive/htmlcss">  Сделано в HTML Academy © 2017</a>
+                </span>
+            </p>
         </footer>
   </body>
 </html>
