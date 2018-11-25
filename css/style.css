@@ -1,0 +1,32 @@
+
+.body
+{
+  font-family: Roboto;
+}
+.Logo {
+  width: 154px;
+  height: 64px;
+  object-fit: contain;
+}
+.sub-menu {
+  display: none;
+}
+
+.menu-item:hover .sub-menu  {
+  display: block;
+}
+.toppings
+{
+  width: 560px;
+  height: 229px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+.topping1
+{
+ width: 165px;
+ height: 46px;
+ opacity: 0.99;
+ box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+ background-image: linear-gradient(to top, #e74a35, #f26843);
+}
