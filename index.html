@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <span class="logo">
-        <img src="img/logo_gllacy.svg" width="154" height="64" alt="Logo Gllacy Shop">
+        <img src="img/logo.png" width="154" height="64" alt="Логотип Gllacy Shop">
       </span>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -25,58 +25,147 @@
           <li><a href="company_info.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-find">Поиск</li>
-          <li class="user-link">Вход</li>
-          <li class="user-basket">Корзина</li>
-        </ul>
+          <li class="user-search">
+            Поиск
+              <form class="user-search-hover" action="https://echo.htmlacademy.ru/" method="post">
+                <input type=search placeholder="Что ищем?">
+            </form>
+         </li>
+          <li class="user-link">
+            Вход
+              <form class="user-login-hover" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <input type="submit" value="Войти">
+                <a href="lost_password.html">Забыли пароль?</a>
+                <a href="new_registration.html">Новая регистрация</a>
+            </form>
+          </li>
+          <li class="user-basket">
+            Корзина
+            <table>
+              <tr class="row-1">
+                <td class="td1"><button type="button" name="button">x</button></td>
+                <td class ="td2"><img src="img/cross.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                <td class="td3">Пломбир с апельсиновым джемом</td>
+                <td class="td4">1,5 кг</td>
+                <td class ="td5">x</td>
+                <td class="td6">200 руб</td>
+                <td class="td7">300 руб</td>
+              </tr>
+              <tr class="row-2">
+                <td class="td1"><button type="button" name="button">x</button></td>
+                <td class ="td2"><img src="img/cross.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td class="td3">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="td4">1,5 кг</td>
+                <td class ="td5">x</td>
+                <td class="td6">300 руб</td>
+                <td class="td7">450 руб</td>
+              </tr>
+              <tr class="row-3">
+                <td colspan="5" class="td-colspan"></td>
+                <th class="td6">Итого</th>
+                <th class="td7">750 руб.</th>
+              </tr>
+           </table>
+              <a href="#">Оформить заказ</a>
+            </li>
+         </ul>
         </nav>
       </header>
  <main>
     <h1 class="visually-hidden"> Магазин Глэйси </h1 >
-      <div class="main_slider">
-        <img src="http://placehold.it/106x85" alt="Временная заглушка Слайдер">
-      </div>
+      <div class=" main_slider ">
+        <input type="radio" name="slider2" id="slider2_1" checked="checked">
+          <label for="slider2_1"></label>
+            <div><img src="img/s1.png" alt="First slider"></div>
+          <label for="slider2_2"></label>
+       <input type="radio" name="slider2" id="slider2_2">
+         <label for="slider2_2"></label>
+           <div><img src=" img/s2.png " alt="Second slider"></div>
+         <label for="slider2_3"></label>
+       <input type="radio" name="slider2" id="slider2_3">
+         <label for="slider2_4"></label>
+           <div><img src=" img/s3.png " alt="Third slider"></div>
+         <label for="slider2_4"></label>
+     </div>
       <section class="toppings"><h2 class="visually-hidden">Акции</h2>
-          <div class="toppings-half-width">
+          <div class="toppings-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
             </p>
-            <a class="topping1" href="#">Хочу варенье!</a>
+            <a class="topping-link button button-red " href="#">Хочу варенье!</a>
           </div>
-          <div class="toppings-half-width">
+          <div class="toppings-item">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
             </p>
-            <a class="topping2" href="#">Хочу шоколадки!</a>
+            <a class="topping-link button button-red " href="#">Хочу шоколадки!</a>
           </div>
         </section>
-      </div>
-    <section> <h2 class="visually-hidden"> Хиты продаж </h2>
-        <ul class="top_sales">
-          <li><a class="top_sale_1" href="#">Хит 1</a></li>
-          <li><a class="top_sale_2" href="#">Хит 2</a></li>
-          <li><a class="top_sale_3" href="#">Хит 3</a></li>
-          <li><a class="top_sale_4" href="#">Хит 4</a></li>
+    <section class="top-sales">
+      <h2 class="visually-hidden"> Хиты продаж </h2>
+        <ul class="top-sales-list">
+          <li class="catalog-item">
+            <h3><a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+                <div class="catalog-item-content">
+                  <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <img src="img/hit.png" width="61" height="61" alt="ХИТ">
+                    <div class="catalog-item-hover">
+                      <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
+                   </div>
+                </div>
+              <b>310 ₽/кг.</b>
+          </li>
+          <li class="catalog-item">
+            <h3><a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></h3>
+                <div class="catalog-item-content">
+                  <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img/hit.png" width="61" height="61" alt="ХИТ">
+                    <div class="catalog-item-hover">
+                      <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
+                   </div>
+                </div>
+              <b>380 ₽/кг.</b>
+          </li>
+          <li class="catalog-item">
+            <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                <div class="catalog-item-content">
+                  <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img/hit.png" width="61" height="61" alt="ХИТ">
+                    <div class="catalog-item-hover">
+                      <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
+                   </div>
+                </div>
+              <b>355 ₽/кг.</b>
+          </li>
+          <li class="catalog-item">
+            <h3><a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                <div class="catalog-item-content">
+                  <img src="img/1.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <img src="img/hit.png" width="61" height="61" alt="ХИТ">
+                    <div class="catalog-item-hover">
+                      <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
+                   </div>
+                </div>
+              <b>415 ₽/кг.</b>
+          </li>
         </ul>
       </section>
       <section class="features">
         <h2 class="visually-hidden"> Преимущества </h2>
-          <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+          <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес </h3>
          	  <ul class="features-list">
   		        <li class="feature-item">
-                <img src="img/ice-cream.svg" width="49" height="49" alt="Pictogram Ice Cream">
                 <p> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
               </li>
               <li class="feature-item">
-                <img src="img/eco.svg" width="49" height="49" alt="Pictogram Eco">
                 <p> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
               </li>
               <li class="feature-item">
-                <img src="img/cow.svg" width="49" height="49" alt="Pictogram Cow">
                 <p> Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="feature-item">
-                <img src="img/thermometer.svg" width="49" height="49" alt="Pictogram Temperature">
                 <p> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
               </li>
   	        </ul>
@@ -86,36 +175,58 @@
                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
           <section class="blog news">
-             <h3 class="newsletter subscription"> Подписка на рассылку</h3>
-               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+             <h3 class="visually-hidden"> Подписка на рассылку</h3>
+               <form class="newsletter subscription" action="https://echo.htmlacademy.ru/" method="post">
+                 <fieldset>
+                  <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
+                    <input type="email" id="email-subscription" name="email-subscription" placeholder="Электронная почта">
+                    <input type="submit" class="button button-red" value="Отправить">
+                 </fieldset>
+               </form>
           </section>
           <div class="main_map">
-            <img src="http://placehold.it/130x43" alt="Временная заглушка Карта">
+            <h3 class="visually-hidden">Карта, адрес и форма обратной связи</h3>
+            <img src="img/layer-3.png" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
+            <span class="off-shop-address">
+              Адрес главного офиса и офлайн-магазина:<br>
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              Для заказов по телефону:<br>
+              <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
+              (с 10 до 20 ежедневно)<br>
+            </span>
+              <div class="feedback-form">
+                <fieldset>
+                  <p>Мы обязательно вам ответим!</p>
+                  <input type="text" name="name" value="name">
+                  <input type="email" id="email">
+                  <input type="submit" value="Отправить">
+                </fieldset>
+              </div>
           </div>
   </main>
-        <footer class="main-footer">
-            <div class="footer-social">
-              <ul>
-                <li><a class="social-button" href="#"> Твиттер </a></li>
-                <li><a class="social-button" href="#"> Инстаграм </a></li>
-                <li><a class="social-button" href="#"> Фейсбук </a></li>
-                <li><a class="social-button" href="#"> Вконтакте </a></li>
-              </ul>
-            </div>
-            <section class="footer-additional info">
-              <h3 class="visually-hidden"> Дополнительная информация</h3>
-              <ul class="footer links">
-                <li><a href="for_suppliers.html">Для поставщиков</a></li>
-                <li><a href="our_documents.html">Наши документы</a></li>
-                <li><a href="production_info.html">О производстве</a></li>
-                <li><a href="eco_standarts.html">Экологические стандарты</a></li>
-              </ul>
-            </section>
-            <p class="footer-copyright">
-              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/10x10" width="10" height="10" alt="Pictogram HTML Logo-Временная заглушка"></a>
-                <span><a class="button" href="https://htmlacademy.ru/intensive/htmlcss">  Сделано в HTML Academy © 2017</a>
-                </span>
-            </p>
-        </footer>
-  </body>
-</html>
+  <footer class="main-footer">
+      <div class="footer-social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <ul class="social-links">
+          <li><a class="social-button-t" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button-i" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button-f" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button-v" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        </ul>
+      </div>
+      <section class="footer-additional info">
+        <h3 class="visually-hidden"> Дополнительная информация</h3>
+        <ul class="footer links">
+          <li><a href="for_suppliers.html">Для поставщиков</a></li>
+          <li><a href="our_documents.html">Наши документы</a></li>
+          <li><a href="production_info.html">О производстве</a></li>
+          <li><a href="eco_standarts.html">Экологические стандарты</a></li>
+        </ul>
+      </section>
+      <p class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/10x10" width="10" height="10" alt="Pictogram HTML Logo-Временная заглушка"></a>
+          <span>Сделано в <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">  HTML Academy </a> © 2017
+          </span>
+      </p>
+  </footer>
+  </html>
