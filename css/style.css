@@ -8,14 +8,59 @@ html {
   box-sizing: border-box;
 }
 */
+html
 
-.body
+body
+
 {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #ffffff;
+  background-color: #849d8f;
+  link="red" vlink="#cecece" alink="#ff0000" bgcolor="black"
 }
-h3.features
+.site-navigation {
+  font-weight: bold;
+  font-size: 16px;
+}
+hover
+{
+  font-weight: normal;
+  font-size: 14px;
+  color: #323232;}
+  a {
+      text-decoration: none;
+    color: #ffffff;
+     }
+     a:visited {
+      color: #ffffff;
+     }
+     a:active {
+      color: #ffbc9e;
+     }
+     a:hover {
+       color: #ffbc9e;
+     }
+.user-navigation
+{
+font-weight: medium;
+font-size: 14px;
+line-height: 16px;
+color: #ffffff;
+}
+.timetable-phone
+{
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 16px;
+}
+.timetable-phone a
+{font-size: 22px;
+line-height: 24px;
+}
+
+.features h3
 {
 font-weight: medium;
 color: #323232;
@@ -37,7 +82,6 @@ line-height: 22px;
 .sub-menu {
   display: none;
 }
-
 
 .menu-item:hover .sub-menu  {
   display: block;
