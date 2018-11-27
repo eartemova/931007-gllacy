@@ -1,7 +1,33 @@
+/*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+*/
 
 .body
 {
-  font-family: Roboto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+h3.features
+{
+font-weight: medium;
+color: #323232;
+font-size: 24px;
+line-height: 30px;
+}
+.feature-item
+{
+font-weight: normal;
+color: #323232;
+font-size: 16px;
+line-height: 22px;
 }
 .Logo {
   width: 154px;
@@ -11,6 +37,7 @@
 .sub-menu {
   display: none;
 }
+
 
 .menu-item:hover .sub-menu  {
   display: block;

@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="css/style.css">
+      <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <span class="logo">
-        <img src="img/logo.png" width="154" height="64" alt="Логотип Gllacy Shop">
+        <img src="img\Icons\logo.png" width="154" height="64" alt="Логотип Gllacy Shop">
       </span>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -43,50 +45,28 @@
           </li>
           <li class="user-basket">
             Корзина
-            <table>
-              <tr class="row-1">
-                <td class="td1"><button type="button" name="button">x</button></td>
-                <td class ="td2"><img src="img/cross.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td class="td3">Пломбир с апельсиновым джемом</td>
-                <td class="td4">1,5 кг</td>
-                <td class ="td5">x</td>
-                <td class="td6">200 руб</td>
-                <td class="td7">300 руб</td>
-              </tr>
-              <tr class="row-2">
-                <td class="td1"><button type="button" name="button">x</button></td>
-                <td class ="td2"><img src="img/cross.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td class="td3">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="td4">1,5 кг</td>
-                <td class ="td5">x</td>
-                <td class="td6">300 руб</td>
-                <td class="td7">450 руб</td>
-              </tr>
-              <tr class="row-3">
-                <td colspan="5" class="td-colspan"></td>
-                <th class="td6">Итого</th>
-                <th class="td7">750 руб.</th>
-              </tr>
-           </table>
-              <a href="#">Оформить заказ</a>
-            </li>
+        </li>
          </ul>
         </nav>
+        <div class="timetable-phone">
+          <span class="visually-hidden">Время работы</span><br><b>С 10 до 20, ежедневно</b><br>
+          <span class="visually-hidden">Телефон</span><a href="tel:+78124502525">8 812 450-25-25</a>
+        </div>
       </header>
  <main>
     <h1 class="visually-hidden"> Магазин Глэйси </h1 >
       <div class=" main_slider ">
         <input type="radio" name="slider2" id="slider2_1" checked="checked">
           <label for="slider2_1"></label>
-            <div><img src="img/s1.png" alt="First slider"></div>
+            <div><img src="img\Sliders\s1.png" alt="First slider"></div>
           <label for="slider2_2"></label>
        <input type="radio" name="slider2" id="slider2_2">
          <label for="slider2_2"></label>
-           <div><img src=" img/s2.png " alt="Second slider"></div>
+           <div><img src=" img\Sliders\s2.png " alt="Second slider"></div>
          <label for="slider2_3"></label>
        <input type="radio" name="slider2" id="slider2_3">
          <label for="slider2_4"></label>
-           <div><img src=" img/s3.png " alt="Third slider"></div>
+           <div><img src=" img\Sliders\s3.png " alt="Third slider"></div>
          <label for="slider2_4"></label>
      </div>
       <section class="toppings"><h2 class="visually-hidden">Акции</h2>
@@ -109,7 +89,7 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
                 <div class="catalog-item-content">
-                  <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <img src="img\Product\1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <img src="img/hit.png" width="61" height="61" alt="ХИТ">
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
@@ -120,7 +100,7 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></h3>
                 <div class="catalog-item-content">
-                  <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img\Product\2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                   <img src="img/hit.png" width="61" height="61" alt="ХИТ">
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
@@ -131,7 +111,7 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <div class="catalog-item-content">
-                  <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img\Product\3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <img src="img/hit.png" width="61" height="61" alt="ХИТ">
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
@@ -142,7 +122,7 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
                 <div class="catalog-item-content">
-                  <img src="img/1.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <img src="img\Product\4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                   <img src="img/hit.png" width="61" height="61" alt="ХИТ">
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
@@ -186,14 +166,14 @@
           </section>
           <div class="main_map">
             <h3 class="visually-hidden">Карта, адрес и форма обратной связи</h3>
-            <img src="img/layer-3.png" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
-            <span class="off-shop-address">
+            <img src="img\Backgrounds\map.jpg" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
+            <p class="off-shop-address">
               Адрес главного офиса и офлайн-магазина:<br>
-              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
               Для заказов по телефону:<br>
-              <a href="tel:+78124502525"><b>8 812 450-25-25</b></a>
+              <a href="tel:+78124502525">8 812 450-25-25</a><br>
               (с 10 до 20 ежедневно)<br>
-            </span>
+            </p>
               <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset>
                   <p>Мы обязательно вам ответим!</p>
