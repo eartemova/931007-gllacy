@@ -15,10 +15,12 @@ body
 {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
   color: #ffffff;
   background-color: #849d8f;
-  link="red" vlink="#cecece" alink="#ff0000" bgcolor="black"
-}
+
+  }
 .site-navigation {
   font-weight: bold;
   font-size: 16px;
@@ -29,11 +31,8 @@ hover
   font-size: 14px;
   color: #323232;}
   a {
-      text-decoration: none;
+      text-decoration: none ;
     color: #ffffff;
-     }
-     a:visited {
-      color: #ffffff;
      }
      a:active {
       color: #ffbc9e;
@@ -41,34 +40,74 @@ hover
      a:hover {
        color: #ffbc9e;
      }
-.user-navigation
-{
-font-weight: medium;
+ li {
+    list-style-type: none;
+  }
+.button {
+
+}
+.button-red {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
+  background-image: linear-gradient(to top, #ca3824, #f26843);
+  border: none;
+  box-shadow:none;
+}
+.button-red:hover {
+  color: #fefefe;
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  border: none;
+  box-shadow:none;
+}
+.button-red:active {
+  color: #fceeec;
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  border: none;
+  box-shadow:none;
+}
+.user-navigation {
+font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 color: #ffffff;
 }
-.timetable-phone
-{
+.user-login-hover a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+/*.user-login-hover a:visited {
+  color: #323232;}*/
+.user-login-hover a:active  {
+  color:#e84d37;}
+.user-login-hover a:hover {
+   color:#e84d37;
+ }
+.timetable-phone {
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
   line-height: 16px;
 }
-.timetable-phone a
-{font-size: 22px;
+.timetable-phone a {
+font-size: 22px;
 line-height: 24px;
 }
 
-.features h3
-{
-font-weight: medium;
+.features h3 {
+font-weight: 500;
 color: #323232;
 font-size: 24px;
 line-height: 30px;
 }
-.feature-item
-{
+.feature-item {
 font-weight: normal;
 color: #323232;
 font-size: 16px;
@@ -79,14 +118,143 @@ line-height: 22px;
   height: 64px;
   object-fit: contain;
 }
+.toppings {
+  text-align: left;
+}
+
+.toppings-item h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+.toppings-item p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 10px;
+}
+.toppings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.toppings-item {
+  width: 540px;
+  height: 229px;
+  /*margin: 10px;*/
+  border-radius: 15px;
+  padding-left: 20px;
+  margin: 10px;
+  }
+.topping-item-raspberry {
+  background-image: url(../img/backgrounds/raspberry.jpg);
+  background-position: left;
+  }
+.topping-item-choco {
+  background-image: url(../img\backgrounds\chocolate.jpg);
+  background-position: left;
+}
+a.topping-link  {
+  text-align:right;
+}
+.top-sales {
+  clear: both;
+}
+.features {
+  background-image: (../img/backgrounds/waffles.jpg);
+
+}
+.blog {
+  clear: both;
+  float: left;
+}
+.off-shop-address {
+  display: block;
+  float: none;
+  width: 377px;
+  height: 305px;
+  border-radius: 10px;
+  background-color:#ffffff;
+  color: #323232;
+  padding: 25px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+}
+.off-shop-address b {
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+}
+.off-shop-address a {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #323232;
+}
+  .off-shop-address a:active {
+    color:##ffbc9e;}
+  .off-shop-address a:hover {
+     color:##ffbc9e;
+   }
+}
+/* ТУТ НЕ СРАБОТАЛО*/
+.feedback-form {
+  color: #323232;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.footer-links a  {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+}
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
 .sub-menu {
   display: none;
 }
-
-.menu-item:hover .sub-menu  {
+.menu-item:hover .sub-menu {
   display: block;
 }
-/*.toppings
+.visually-hidden {
+  display: none;
+}
+.catalog-item {
+  text-align: center;
+}
+.catalog-item a {
+  font-size: 16px;
+  font-weight: 500;
+}
+.catalog-item-content img {
+  border-radius: 134px;
+}
+  /* cream_ice_cream-text - 2 страница*/
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+.catalog-sort legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.catalog-sort {
+  font-weight: 500;
+  line-height: 18px;
+}/*.toppings
 {
   width: 560px;
   height: 229px;
