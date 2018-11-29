@@ -167,6 +167,13 @@ a.topping-link  {
 .blog {
   clear: both;
   float: left;
+  }
+
+  .blog-news {
+    background-image: image(...img/backgrounds/strawberry.jpg);
+  }
+  .newsletter-subscription {
+  background-image: image(...img/backgrounds/subscribe.svg);
 }
 .off-shop-address {
   display: block;
