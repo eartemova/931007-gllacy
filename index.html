@@ -14,9 +14,9 @@
       </span>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="menu-item"> <a href="catalog.html">Каталог</a>
-            <ul class="sub-menu catalog">
-              <li><a href="#">Новинки</a></li>
+          <li class="menu-item"><a class="catalog-link" href="catalog.html">Каталог</a>
+            <ul class="sub-menu">
+              <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="cream_ice_cream.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -46,12 +46,12 @@
                 <input type="email" placeholder="Электронная почта" required>
                 <input type="password" placeholder="Пароль" required>
                 <input type="submit" value="Войти">
-                <a href="lost_password.html" style="display:inline-block; width: 100%">Забыли пароль?</a>
-                <a href="new_registration.html" style="display:inline-block; width: 100%">Новая регистрация</a>
+                <a href="lost_password.html">Забыли пароль?</a>
+                <a href="new_registration.html">Новая регистрация</a>
               </form>
             </div>
           </li>
-          <li class="user-basket">
+          <li class="user-basket-index">
             <span>Пусто</span>
         </li>
          </ul>
@@ -63,18 +63,19 @@
       </header>
  <main>
     <h1 class="visually-hidden"> Магазин Глэйси </h1 >
+      <img src="img/sliders/s1.png" alt="Временный слайдер">
       <div class=" main_slider ">
         <input type="radio" name="slider2" id="slider2_1" checked="checked">
           <label for="slider2_1"></label>
-            <div><img src="img\sliders\s1.png" alt="First slider"></div>
+            <div><img src="img/sliders/s1.png" alt="First slider"></div>
           <label for="slider2_2"></label>
        <input type="radio" name="slider2" id="slider2_2">
          <label for="slider2_2"></label>
-           <div><img src=" img\sliders\s2.png " alt="Second slider"></div>
+           <div><img src=" img/sliders/s2.png " alt="Second slider"></div>
          <label for="slider2_3"></label>
        <input type="radio" name="slider2" id="slider2_3">
          <label for="slider2_4"></label>
-           <div><img src=" img\sliders\s3.png " alt="Third slider"></div>
+           <div><img src=" img/sliders/s3.png " alt="Third slider"></div>
          <label for="slider2_4"></label>
      </div>
       <section class="toppings"><h2 class="visually-hidden">Акции</h2>
@@ -119,7 +120,7 @@
           <li class="catalog-item">
             <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                 <div class="catalog-item-content">
-                  <img src="img\product\3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img/product/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <img src="img/hit.png" width="61" height="61" alt="ХИТ">
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
@@ -177,16 +178,16 @@
           <div class="main_map">
             <h3 class="visually-hidden">Карта, адрес и форма обратной связи</h3>
             <img src="img/backgrounds/map.jpg" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
-            <p class="off-shop-address" style="padding-right:50px;">
-              <span style="display:inline-block; width: 100%">
-              Адрес главного офиса и офлайн-магазина:</span>
+            <address class="off-shop-address">
+              <p>
+              Адрес главного офиса и офлайн-магазина:</p>
               <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              <span style="display:inline-block; width: 100%">
-              Для заказов по телефону:</span>
-              <a href="tel:+78124502525">8 812 450-25-25</a><br>
-              <span style="display:inline-block; width: 100%" >(с 10 до 20 ежедневно)</span>
+              <p>
+              Для заказов по телефону:</p>
+              <a href="tel:+78124502525">8 812 450-25-25</a>
+              <p>(с 10 до 20 ежедневно)</p>
               <button type="button" name="button" class="feedback button-red">Форма обратной связи</button>
-            </p>
+            </address>
               <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p>Мы обязательно вам ответим!</p>
                   <input type="text" name="name" id="name-feedback" placeholder="Как вас зовут?">
