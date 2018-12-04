@@ -6,13 +6,14 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
+      <!--<link rel="stylesheet" href="css/outline.css">!-->
 </head>
   <body>
     <header class="main-header">
-      <a class="logo" href="index.html">
-        <img src="img/icons/logo-gllacy.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-      </a>
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
+        <a class="logo-link" href="index.html">
+          <img src="img/icons/logo-gllacy.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        </a>
         <ul class="site-navigation">
           <li class="menu-item"><a class="catalog-link-cream" href="catalog.html">Каталог</a>
             <ul class="sub-menu">
@@ -83,11 +84,11 @@
             </div>
             </li>
          </ul>
+         <div class="timetable-phone">
+           <span class="visually-hidden">Время работы</span><b>С 10 до 20, ежедневно</b>
+           <span class="visually-hidden">Телефон</span><a href="tel:+78124502525">8 812 450-25-25</a>
+         </div>
         </nav>
-        <div class="timetable-phone">
-          <span class="visually-hidden">Время работы</span><b>С 10 до 20, ежедневно</b>
-          <span class="visually-hidden">Телефон</span><a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
     </header>
       <main class="container">
         <h1 class="page-title">Сливочное мороженое</h1>
@@ -110,7 +111,7 @@
           <fieldset class="fat"><legend>Жирность:</legend>
              <ul class="fat-item">
                <li> <input type="radio" name="fat-choice" value="f0" id="f0"><label for="f0">0%</label></li>
-               <li><input type="radio" name="fat-choice" value="f<10" id="f<10"><label for="f<10">до 10%</label></li>
+               <li><input type="radio" name="fat-choice" value="f<10" checked id="f<10"><label for="f<10">до 10%</label></li>
                <li><input type="radio" name="fat-choice" value="f<30" id="<30"><label for="<30">до 30%</label></li>
                <li><input type="radio" name="fat-choice" value="f>30" id="f>30"><label for="f>30">выше 30%</label></li>
              </ul>
@@ -255,7 +256,7 @@
               </ul>
           </section>
           <h3 class="visually-hidden">Переход по страницам</h3>
-          <ul class="pagination list">
+          <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"> <a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
@@ -263,14 +264,14 @@
             <li class="pagination-item"><a href="#">5</a></li>
           </ul>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer container ">
           <div class="footer-social">
             <h3 class="visually-hidden">Социальные сети</h3>
             <ul class="social-links">
-              <li><a class="social-button-t" href="#"><span class="visually-hidden">Твиттер</span> SVG Твиттер</a></li>
-              <li><a class="social-button-i" href="#"><span class="visually-hidden">Инстаграм</span>SVG Инстаграм</a></li>
-              <li><a class="social-button-f" href="#"><span class="visually-hidden">Фейсбук</span>SVG Фейсбук</a></li>
-              <li><a class="social-button-v" href="#"><span class="visually-hidden">Вконтакте</span>SVG Вконтакте</a></li>
+              <li><a class="social-button-t" href="#"><span class="visually-hidden"> Glaccy Shop в Твиттере</span> SVG Т</a></li>
+              <li><a class="social-button-i" href="#"><span class="visually-hidden">Glaccy Shop в Инстаграм</span>SVG И</a></li>
+              <li><a class="social-button-f" href="#"><span class="visually-hidden">Glaccy Shop в Фейсбук</span>SVG Ф</a></li>
+              <li><a class="social-button-v" href="#"><span class="visually-hidden">Glaccy Shop в Вконтакте</span>SVG В</a></li>
             </ul>
           </div>
           <section class="footer-additional info">

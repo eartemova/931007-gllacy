@@ -6,13 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="css/outline.css">!-->
   </head>
   <body>
-    <header class="main-header">
-      <span class="logo">
-        <img src="img/icons/logo-gllacy.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-      </span>
+    <header class="main-header container">
       <nav class="main-navigation">
+        <p class="logo">
+          <img src="img/icons/logo-gllacy.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+        </p>
         <ul class="site-navigation">
           <li class="menu-item"><a class="catalog-link" href="catalog.html">Каталог</a>
             <ul class="sub-menu">
@@ -55,15 +56,16 @@
             <span>Пусто</span>
         </li>
          </ul>
+          <div class="timetable-phone">
+            <span class="visually-hidden">Время работы</span><b>С 10 до 20, ежедневно</b>
+            <span class="visually-hidden">Телефон</span><a href="tel:+78124502525">8 812 450-25-25</a>
+          </div>
         </nav>
-        <div class="timetable-phone">
-          <span class="visually-hidden">Время работы</span><b>С 10 до 20, ежедневно</b>
-          <span class="visually-hidden">Телефон</span><a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
       </header>
  <main>
-    <h1 class="visually-hidden"> Магазин Глэйси </h1 >
-      <img src="img/sliders/s1.png" alt="Временный слайдер">
+   <div class="container">
+     <h1 class="visually-hidden"> Магазин Глэйси </h1 >
+      <img class="main_slider-temporary" src="img/sliders/s3.png" alt="Временный слайдер">
       <div class=" main_slider ">
         <input type="radio" name="slider2" id="slider2_1" checked="checked">
           <label for="slider2_1"></label>
@@ -175,36 +177,39 @@
                </form>
           </section>
         </div>
-          <div class="main_map">
-            <h3 class="visually-hidden">Карта, адрес и форма обратной связи</h3>
-            <img src="img/backgrounds/map.jpg" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
-            <address class="off-shop-address">
-              <p>
-              Адрес главного офиса и офлайн-магазина:</p>
-              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              <p>
-              Для заказов по телефону:</p>
-              <a href="tel:+78124502525">8 812 450-25-25</a>
-              <p>(с 10 до 20 ежедневно)</p>
-              <button type="button" name="button" class="feedback button-red">Форма обратной связи</button>
-            </address>
+      </div>
+        <h3 class="visually-hidden">Карта, адрес и форма обратной связи</h3>
+            <div class="container">
+                <address class="off-shop-address">
+                  <p>
+                  Адрес главного офиса и офлайн-магазина:</p>
+                  <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                  <p>
+                  Для заказов по телефону:</p>
+                  <a href="tel:+78124502525">8 812 450-25-25</a>
+                  <p>(с 10 до 20 ежедневно)</p>
+                  <button type="button" name="button" class="feedback button-red">Форма обратной связи</button>
+              </address>
               <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p>Мы обязательно вам ответим!</p>
-                  <input type="text" name="name" id="name-feedback" placeholder="Как вас зовут?">
-                  <input type="email" id="email" name="email-feedback" placeholder="Ваша почта для ответа?">
-                  <input type="textarea" name="feedback-text" id="feedback-text" placeholder="Напишите что-нибудь...">
+                  <p>Мы обязательно вам ответим!</p>
+                    <input type="text" name="name" id="name-feedback" placeholder="Как вас зовут?">
+                    <input type="email" id="email" name="email-feedback" placeholder="Ваша почта для ответа?">
+                    <input type="textarea" name="feedback-text" id="feedback-text" placeholder="Напишите что-нибудь...">
                   <button  type="button"class="button-red" value="Отправить">Отправить</button>
+              </form>
               </div>
-            </form>
+              <div class="main_map" id="map">
+                <img src="img/backgrounds/map.jpg" width="1200" height="430" alt="Магазин Gllacy Shop на Карте">
+              </div>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container ">
       <div class="footer-social">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="social-links">
-          <li><a class="social-button-t" href="#"><span class="visually-hidden">Твиттер</span> SVG Твиттер</a></li>
-          <li><a class="social-button-i" href="#"><span class="visually-hidden">Инстаграм</span>SVG Инстаграм</a></li>
-          <li><a class="social-button-f" href="#"><span class="visually-hidden">Фейсбук</span>SVG Фейсбук</a></li>
-          <li><a class="social-button-v" href="#"><span class="visually-hidden">Вконтакте</span>SVG Вконтакте</a></li>
+          <li><a class="social-button-t" href="#"><span class="visually-hidden"> Glaccy Shop в Твиттере</span> SVG Т</a></li>
+          <li><a class="social-button-i" href="#"><span class="visually-hidden">Glaccy Shop в Инстаграм</span>SVG И</a></li>
+          <li><a class="social-button-f" href="#"><span class="visually-hidden">Glaccy Shop в Фейсбук</span>SVG Ф</a></li>
+          <li><a class="social-button-v" href="#"><span class="visually-hidden">Glaccy Shop в Вконтакте</span>SVG В</a></li>
         </ul>
       </div>
       <section class="footer-additional info">
