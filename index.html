@@ -32,8 +32,9 @@
           <li class="menu-item"><a href="#"><span>О Компании</span></a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="user-search">
-            <div>
+          <li> <a class="user-search" href="#"><span class="visually-hidden">Поиск</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32C12.533 9.247 13 7.93 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.438 0 2.763-.473 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+          <div>
               <form class="user-search-hover" action="http://google.com" method="get" target="_blank">
                 <span class="search-field">
                 <input id="search-field" style=";" type=search required placeholder="Что ищем?">
@@ -42,6 +43,7 @@
                 <span class="visually-hidden">Поиск</span>
               </form>
             </div>
+            </a>
          </li>
           <li class="user-login">
             <span>Вход</span>
@@ -66,35 +68,36 @@
         </div>
       </div>
     </header>
-      <section class="slider">
-          <div class="slider-controls">
-            <label for="product-1">First</label>
-            <label for="product-2">Second</label>
-            <label for="product-3">Third</label>
-          </div>
-          <ul class="slider-list">
-            <li class="slider-item slide" id="slide1">
-              <h3 class="slide-title">
-                Крем-брюле и пломбир с малиновым джемом
-              </h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
-            </li>
-            <li class="slider-item slide" id="slide2">
-              <h3 class="slide-title">
-                Шоколадный пломбир и лимонный сорбет
-              </h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
-            </li>
-            <li class="slider-item slide" id="slide3">
-              <h3 class="slide-title">
-                Пломбир с помадкой и клубничный щербет
-              </h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
-            </li>
-          </ul>
-        </section>
+
  <main>
    <div class="container">
+     <section class="slider">
+         <div class="slider-controls">
+           <label for="product-1">First</label>
+           <label for="product-2">Second</label>
+           <label for="product-3">Third</label>
+         </div>
+         <ul class="slider-list">
+           <li class="slider-item slide" id="slide1">
+             <h3 class="slide-title">
+               Крем-брюле и пломбир с малиновым джемом
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+           <li class="slider-item slide" id="slide2">
+             <h3 class="slide-title">
+               Шоколадный пломбир и лимонный сорбет
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+           <li class="slider-item slide" id="slide3">
+             <h3 class="slide-title">
+               Пломбир с помадкой и клубничный щербет
+             </h3>
+             <a class="button slide-button" href="#">Давайте оба!</a>
+           </li>
+         </ul>
+       </section>
      <h1 class="visually-hidden"> Магазин Глэйси </h1 >
       <section class="toppings"><h2 class="visually-hidden">Акции</h2>
           <div class="toppings-item topping-item-raspberry">
@@ -114,19 +117,19 @@
       <h2 class="visually-hidden"> Хиты продаж </h2>
         <ul class="top-sales-list">
           <li class="catalog-item">
-            <h3><a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                <div class="catalog-item-content">
+              <div class="catalog-item-content">
                   <img src="img/product/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <div class="catalog-item-hover">
+                  <h3><a href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+              <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
                    </div>
                 </div>
               <p class="price">310₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
-            <h3><a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></h3>
                 <div class="catalog-item-content">
                   <img src="img/product/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <h3><a href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a></h3>
                   <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
                    </div>
@@ -134,9 +137,10 @@
               <p class="price">380₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
-            <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+
                 <div class="catalog-item-content">
                   <img src="img/product/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <h3><a href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
                     <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
                    </div>
@@ -144,9 +148,9 @@
               <p class="price">355₽<span>/кг</span></p>
           </li>
           <li class="catalog-item">
-            <h3><a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
                 <div class="catalog-item-content">
                   <img src="img/product/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <h3><a href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
                   <div class="catalog-item-hover">
                       <a href="catalog-item.html" class="button button-red">Быстрый просмотр</a>
                    </div>
@@ -196,7 +200,7 @@
             <div class="container">
                 <address class="off-shop-address">
                   <p>
-                  Адрес главного офиса и офлайн-магазина:</p>
+                  Адрес главного офиса и&nbspофлайн-магазина:</p>
                   <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
                   <p>
                   Для заказов по телефону:</p>

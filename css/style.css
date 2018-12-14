@@ -1,8 +1,8 @@
 /*ВРЕМЕННО ПОСТАВЛЮ - ПОЗЖЕ УБЕРУ
 * {
   outline:1px solid red;
- }*/
-
+ }
+*/
 
 *,
 *::before,
@@ -50,6 +50,9 @@ li {/* ВРЕМЕННО - ПОКА НЕ УБРАЛА*/
 img {
   max-width: 100%;
   height: auto;
+}
+main {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*--------СЛАЙДЕР-------*/
 .site-wrapper {
@@ -137,7 +140,7 @@ img {
 .slider-controls {
   position: absolute;
   top:-10px;
-  left: 103px;
+  left: 0px;
   top:446px;
   z-index: 20;
   font-size: 0;
@@ -283,7 +286,7 @@ li .menu-item {
   background-color: #f7f6f3;
   color: #333333;
 }
-.menu-item span:not(.current) {
+.menu-item a:not(.current) span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .sub-menu {
@@ -292,42 +295,72 @@ li .menu-item {
   width: 143px;
   min-height: 171px;
   top:40px;
+  left:-8px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
-  /*padding: 30px 20px 14px 20px;*/
   color:#ffffff;
   color: var(--white-two);
   z-index: 100;
   margin: 0;
-  padding: 20px;
+  padding-left:0px;
 }
 .sub-menu a:hover {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 16px;
   color:#e84d37;
   background-color: #fbded7;
-  width: 100%;
+  width:143px;
   border-radius: 0;
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin: 0;
  }
 .sub-menu a:active {
   font-size: 14px;
   line-height: 16px;
   color: #e84d37;
   background-color: #f6b5a5;
-  width: 100%;
+  width: 143px;
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin: 0;
 }
 .sub-menu a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  width: 143px;
   color:#323232;
   font-weight: normal;
-  padding-top:10px;
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin: 0;
 }
-.sub-menu-link a {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-  color:#ffffff;
+.sub-menu b {
+  position: relative;
+}
+.sub-menu b::after {
+  position: absolute;
+  content: "";
+  width: 126px;
+  height: 1px;
+  bottom: -10px;
+  left: -12px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+a.sub-menu-current {
+  color: #ffffff;
+  background-color: #d07058;
 }
 .menu-item a:hover,
 .menu-item a:active {
@@ -399,30 +432,28 @@ li .menu-item {
   display: block;
   position: relative;
   margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 100;
 }
-.user-search div {
+/*.user-search-svg {
   display: block;
-  position: relative;
+  position: absolute;
+  width: 17px;
+  height: 17px;
   padding: 16px;
   border-radius: 32px;
   background-color: rgba(255, 255, 255, 0.2);
-}
-.user-search div::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 7px;
-  top:7px;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 100;
-}
-.search-field {
+  z-index: 1000;
+}*/
+.user-search-hover {
   display: none;
   position: absolute;
+  top:40px;
+  right: -30px;
   width: 341px;
   height: 84px;
   border-radius: 5px;
@@ -431,39 +462,16 @@ li .menu-item {
   padding: 20px;
   z-index: 100;
 }
-.user-search:hover .search-field {
+.user-search:hover .user-search-hover {
   display: block;
 }
-.user-login-hover {
-  display: none;
-  position: absolute;
-  width: 277px;
-  height: 214px;
-  border-radius: 5.1px;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: #f8f7f4;
-  padding: 20px;
-  top:20px;
-  z-index: 100;
+.user-search:hover path {
+  fill: #323232;
 }
-.user-login:hover .user-login-hover {
-  display: inline-block;
-  vertical-align: top;
+.user-search:hover {
+    background-color: #f8f7f4;
 }
-.user-login-hover a {
-  font-size: 13px;
-  line-height: 24px;
-  color: #323232;
-  font-weight: normal;
-}
-.user-login-hover a:active {
-  color:#e84d37;
-}
-.user-login-hover a:hover {
-   color:#e84d37;
-}
-/*.button {}
-Временно скрыто*/
+/*КРАСНАЯ КНОПКА (ФОРМЫ, ССЫЛКИ)*/
 .button-red {
   font-size: 18px;
   line-height: 24px;
@@ -574,6 +582,41 @@ li .menu-item {
   background-position: 0 0;
   z-index: 100;
 }
+.user-login-hover {
+  display: none;
+  position: absolute;
+  width: 277px;
+  height: 214px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  padding: 20px;
+  top:20px;
+  z-index: 101;
+}
+.user-login:hover {
+  color: #323232;
+  background-color:#f8f7f4;
+  border-radius: 15px;
+}
+.user-login:hover .user-login-hover {
+  display: block;
+}
+.user-login:hover .user-login span  {
+  background-color:#f8f7f4;
+}
+.user-login-hover a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  font-weight: normal;
+}
+.user-login-hover a:active {
+  color:#e84d37;
+}
+.user-login-hover a:hover {
+   color:#e84d37;
+}
 /*АКЦИИ*/
 .toppings {
   display: flex;
@@ -593,24 +636,23 @@ li .menu-item {
 .toppings-item.topping-item-raspberry {
   margin-right: 26px;
 }
+
 .toppings-item h3 {
-  display: block;
-  position: absolute;
-  top:-19px;
-  left: 19px;
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+  padding-left: 19px;
+  padding-top: 16px;
+  margin: 0;
 }
 .toppings-item p {
-  display: block;
-  position: absolute;
-  left:20px;
-  top:54px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  margin: 0;
 }
 .topping-item-raspberry {
   background-image: url("../img/backgrounds/raspberry.jpg");
@@ -727,12 +769,11 @@ div.toppings-item.topping-item-choco a {
   background-position: 0 0;
 }
 .catalog-item h3 {
+  margin: 0;
+  width: 100%;
   display: inline-block;
-  width: 245px;
-  position: absolute;
   text-align: center;
-  top:270px;
-  left: 0;
+  padding: 5px 5px;
 }
 .catalog-item.cream h3 {
   top:259px;
@@ -751,9 +792,10 @@ div.toppings-item.topping-item-choco a {
   background-image: url("../img/backgrounds/waffles.jpg");
   border-radius: 15px;
   width: 1146px;
-  height: 306px;
+  min-height: 306px;
   margin-top: 40px;
 }
+
 .features h3 {
   display: block;
   position: absolute;
@@ -957,7 +999,7 @@ div.toppings-item.topping-item-choco a {
   width: 100%;
   margin-top: 40px;
 }
-.main_map::after{
+.off-shop-address::before{
   content: "";
   display: block;
   position: absolute;
@@ -965,8 +1007,8 @@ div.toppings-item.topping-item-choco a {
   background-repeat: no-repeat;
   width: 80px;
   height: 140px;
-  top: 139px;
-  left: 340px;
+  top: 74px;
+  right: 826px;
   margin: 0;
   padding: 0;
 }
@@ -994,16 +1036,19 @@ div.toppings-item.topping-item-choco a {
   font-size: 18px;
 }
 .off-shop-address b {
-  margin: 0;
+  margin: -1px;
   font-size: 18px;
   line-height: 24px;
 }
 .off-shop-address p {
   font-size: 14px;
   line-height:20px;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-right: 50px;
   margin-bottom: 5px;
+}
+.off-shop-address p:first-child {
+    padding-top: 7px;
 }
 .off-shop-address a {
   font-size: 18px;
@@ -1066,24 +1111,21 @@ border-color: #0088cc;
 .footer-links {
 display: table;
 padding: 0px;
-margin-top: 18px;
-margin-right: 30px;
+margin-top: 14px;
+margin-right: 29px;
 }
 .footer-links-left {
   display: table-cell;
-  padding-right: 35px;
-  padding-bottom: 14px;
+  padding-right: 33px;
 }
 .footer-links-right {
   display: table-cell;
   padding-right: 70px;
-  padding-bottom:14px;
 }
 .footer-links a {
   display: table-row;
   font-size: 13px;
-  line-height: 18px;
-  padding-bottom: 8px;
+  line-height: 19px;
   color: #ffffff;
 }
 .footer-links span {
