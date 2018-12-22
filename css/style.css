@@ -43,10 +43,6 @@ a:hover {
   color: #ffbc9e;
 }
 /* ОБЩИЕ ПАРАМЕТРЫ ТЕГОВ*/
-
-li {/* ВРЕМЕННО - ПОКА НЕ УБРАЛА*/
-  list-style-type: none;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -296,6 +292,7 @@ li .menu-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .sub-menu {
+  list-style: none;
   position: absolute;
   display: none;
   width: 143px;
@@ -551,7 +548,7 @@ a.sub-menu-current {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   padding-top: 20px;
-  padding-right: 15px;
+  padding-left: 15px;
   z-index: 100;
 }
 .search-field-form {
@@ -831,6 +828,7 @@ a.sub-menu-current {
   margin-top: 40px;
 }
 .top-sales-list {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -978,6 +976,7 @@ a.sub-menu-current {
   margin: 0;
 }
 .features-list {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1265,9 +1264,10 @@ button.feedback.button-red:outline {
   padding-right: 27px;
   border-radius: 30px;
 }
-/*.off-shop-text {
-  padding-right:50px;
-}*/
+.feedback.button-red:hover .feedback-form {
+  display: block;
+}
+
 /*--ФОРМА ОБРАТНОЙ СВЯЗИ---*/
 .feedback-form {
   display: none;
@@ -1311,7 +1311,7 @@ button.feedback.button-red:outline {
   width: 428px;
   min-height: 155px;
   margin-top: 19px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .feedback-form .button-red{
 margin-top: 25px;
@@ -1418,6 +1418,7 @@ a.footer-links-bold {
   color:#ffbc9e;
 }
 .social-links {
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1559,6 +1560,7 @@ h1.page-title {
   margin-top: 9px;
 }
 .breadcrumbs {
+  list-style: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1658,6 +1660,7 @@ h1.page-title {
   padding-left: 15px;
 }
 .toppings-sort-item {
+  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1726,6 +1729,7 @@ h1.page-title {
   opacity:1;
 }
 .fat-item {
+  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1885,6 +1889,7 @@ select::-ms-expand {
   border:none;
 }
 .catalog-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   width:  1146px;
@@ -1898,7 +1903,7 @@ select::-ms-expand {
 }
 /* УКАЗАТЕЛЬ СТРАНИЦ*/
 .pagination-list {
-  list-style-type: none;
+  list-style: none;
   margin-top: 24px;
   margin-bottom: 7px;
   padding-bottom: 28px;
