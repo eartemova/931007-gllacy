@@ -54,5 +54,5 @@ var button = document.querySelector(".feedback");
                 popup.classList.remove("modal-show");
                 popup.classList.remove("modal-error");
               }
-            }
-          });
+          }
+        });
