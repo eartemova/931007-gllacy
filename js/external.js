@@ -16,10 +16,10 @@ var button = document.querySelector(".feedback");
             evt.preventDefault();
             popup.classList.add("modal-show");
           if (storage) {
-            name.value = storage;
+            fname.value = storage;
             email.focus();
           } else {
-            name.focus();
+            fname.focus();
           }
           if (storage) {
             email.value = storage;
@@ -41,7 +41,7 @@ var button = document.querySelector(".feedback");
             popup.classList.add("modal-error");
           } else {
             if (isStorageSupport) {
-              localStorage.setItem("name", fname.value);
+              localStorage.setItem("feedback-name", fname.value);
               popup.classList.add("modal-error");
               popup.classList.remove("modal-error");
             }

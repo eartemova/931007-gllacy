@@ -1,8 +1,8 @@
-/*ВРЕМЕННО ПОСТАВЛЮ - ПОЗЖЕ УБЕРУ */
+/*ВРЕМЕННО ПОСТАВЛЮ - ПОЗЖЕ УБЕРУ
 * {
   outline:1px solid red;
  }
-
+ */
 *,
 *::before,
 *::after {
@@ -231,7 +231,12 @@ a:hover {
   z-index: 20;
   font-size: 0;
 }
-.slider-controls label {
+.button-slider {
+  margin-top: -2px;
+  margin-left: -2px;
+}
+.slider-controls label,
+.button-slider {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -242,7 +247,8 @@ a:hover {
   border-radius: 50%;
   cursor: pointer;
 }
-.slider-controls label:hover {
+.slider-controls label:hover,
+.button-slider:focus {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -393,6 +399,9 @@ li .menu-item {
   padding-bottom:7px;
   background-color: #f7f6f3;
   color: #333333
+}
+.catalog-link a:focus {
+  background-color: #f7f6f3;
 }
 .menu-item > a:active {
   -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
@@ -691,7 +700,7 @@ a.sub-menu-current {
 .user-search:hover .user-search-hover {
   display: block;
 }
-.button-search:active .user-search-hover {
+.button-search:focus+.user-search-hover {
   display: block;
 }
 .user-search:hover path {
@@ -1707,25 +1716,23 @@ a.feedback.button-red:outline {
   min-height: 90px;
 }
 .footer-additional {
-  margin-top: 28px;
+  margin-top: 23px;
+  width: 400px;
+  margin-left: -47px;
 }
-.footer-links {
+ul.footer-links {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300px;
   position: relative;
 }
-.footer-links li:nth-child(even){
-  flex-grow: : 2;
+ul.footer-links li {
+  min-width: 141px;
+  padding-left: 23px;
 }
-.footer-links li:nth-child(odd){
-  flex-grow: : 3;
-}
-
 .footer-additional a {
   font-size: 13px;
   line-height: 19px;
@@ -1733,6 +1740,7 @@ a.feedback.button-red:outline {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer-copyright a:last-child:hover,
 .footer-copyright a:last-child:active,
@@ -1755,8 +1763,8 @@ a.footer-links-bold {
   background-image: url("../img/icons/heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  top: 0;
-  left: -22px;
+  top: 6px;
+  left: 1px;
 }
 .footer-copyright {
   display: -webkit-box;
@@ -2094,7 +2102,7 @@ h1.page-title {
 .filter-toppings-radio+label::before {
   content: "";
   position: absolute;
-  top:0;
+  top: 2px;
   left: -30px;
   width: 22px;
   height: 22px;
@@ -2210,7 +2218,7 @@ select::-ms-expand {
   border: 0;
   font-weight: 500;
   line-height: 18px;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 .sort-price {
   display: inline-block;
@@ -2329,8 +2337,7 @@ select::-ms-expand {
 
 .pagination-list {
   list-style: none;
-  margin-top: 24px;
-  margin-bottom: 7px;
+  margin-top: 25px;
   padding-bottom: 28px;
   display: inline-block;
   vertical-align: middle;
@@ -2343,7 +2350,7 @@ select::-ms-expand {
   vertical-align: middle;
   margin:0;
 }
-.pagination-item.pagination-item-back a {
+.pagination-item-back a {
   /*content: "";*/
   display: block;
   width: 9px;
@@ -2356,8 +2363,9 @@ select::-ms-expand {
 .pagination-item-forward a {
   content: "";
   display: block;
-  width: 9px;
-  height: 14px;
+  width: 8px;
+  height: 12px;
+  margin-left: 11px;
   background-image: url("../img/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2404,11 +2412,13 @@ select::-ms-expand {
   vertical-align: middle;
   min-width: 26px;
   min-height: 26px;
+  line-height: 26px;
   border-radius: 50%;
-  margin:0;
+  margin-left: 10px;
+  margin-right: -2px;
   background-color: #ffffff;
   color: #323232;
-  padding-top: 2px;
+  text-decoration: none;
 }
 .pagination-item-current a:hover {
   display: inline-block;
@@ -2417,7 +2427,8 @@ select::-ms-expand {
   min-width: 26px;
   min-height: 26px;
   border-radius: 50%;
-  margin:0;
+  margin-left: 10px;
+  margin-right: -2px;
   background-color: #ffffff;
   color: #323232
 }
