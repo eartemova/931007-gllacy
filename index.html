@@ -8,9 +8,9 @@
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
-      <input class="visually-hidden-slider" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden-slider" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden-slider" type="radio" id="product-3" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
       <div class="site-wrapper">
          <header class="main-header">
             <div class="container">
@@ -21,7 +21,7 @@
                   <ul class="site-navigation">
                      <li class="menu-item catalog">
                         <a class="catalog-link" href="#"><span>Каталог</span></a>
-                        <ul class="sub-menu ">
+                        <ul class="sub-menu">
                            <li class="sub-menu-link sub-menu-link-b"><a href="#">Новинки</a></li>
                            <li class="sub-menu-link link-dark"><a href="cream_ice_cream.html">Сливочное</a></li>
                            <li class="sub-menu-link link-dark"><a href="#">Щербеты</a></li>
@@ -87,9 +87,9 @@
             <div class="container">
                <section class="slider">
                   <div class="slider-controls">
-                     <label for="product-1"><button type="submit" class="button-slider sl1">Первый</button></label>
-                     <label for="product-2"><button type="submit" class="button-slider sl2">Второй</button></label>
-                     <label for="product-3">Третий</label>
+                     <button type="button" class="button-slider sl1"><label for="product-1">Первый</label></button>
+                     <button type="button" class="button-slider sl2"><label for="product-2">Второй</label></button>
+                     <button type="button" class="button-slider sl3"><label for="product-3">Третий</label></button>
                   </div>
                   <ul class="slider-list">
                      <li class="slider-item slide" id="slide1">
