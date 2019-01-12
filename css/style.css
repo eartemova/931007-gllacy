@@ -33,11 +33,30 @@ body {
   padding: 0 27px;
 }
 
-/* ОБЩИЕ ПАРАМЕТРЫ ТЕГОВ*/
+/* ОБЩИЕ ПАРАМЕТРЫ */
 
 img {
   max-width: 100%;
   height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*ОБЩИЕ ПАРАМЕТРЫ КЛАССОВ*/
@@ -383,7 +402,6 @@ padding: 0;
 .site-navigation a {
   text-decoration:none;
   color:
-
 }
 .current {
   display: block;
@@ -420,6 +438,12 @@ li .menu-item {
   padding-right:14px;
   border-radius: 23px;
   padding-bottom:7px;
+  background-color: #f7f6f3;
+  color: #333333
+}
+
+.menu-item:hover {
+  border-radius: 23px;
   background-color: #f7f6f3;
   color: #333333
 }
@@ -1167,6 +1191,7 @@ a.sub-menu-current {
 }
 .catalog-button.button-red {
   display: inline-block;
+  position: absolute;
   text-align: center;
   font-size: 18px;
   padding-left: 19px;
@@ -1178,6 +1203,7 @@ a.sub-menu-current {
   margin-top: 336px;
   margin-left: 45px;
   text-decoration: none;
+  bottom: 10px;
 }
 .catalog-button.button-red:hover {
   color: #ffffff;
@@ -1189,7 +1215,7 @@ a.sub-menu-current {
   display: none;
   position: absolute;
   width: 293px;
-  height: 405px;
+  min-height: 405px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1197,7 +1223,7 @@ a.sub-menu-current {
   top: -6px;
   left: -14px;
   z-index: 5;
-  bottom: -10px;
+  bottom: -60px;
 }
 .catalog-item:hover .catalog-item-hover {
   display: block;
@@ -1928,28 +1954,18 @@ a.social-button-v::before {
 .social-links a:hover::before {
   opacity: 1;
 }
-.social-links a:active {
+.social-links a:active::before {
   opacity: 0.7;
 }
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.social-button-t:hover,
+.social-button-i:hover,
+.social-button-f:hover,
+.social-button-v:hover {
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
+
+
+
 
   /* 2 СТРАНИЦА - cream_ice_cream.html */
 
