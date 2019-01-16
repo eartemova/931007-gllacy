@@ -2127,6 +2127,8 @@ select::-ms-expand {
 .sort:hover, .sort:focus {
   background-image: url("../img/icons/icon-down-dir.svg");
   color: #323232;
+}
+.sort:active, .sort:focus {
   background-color: #ffffff;
 }
 .catalog-sort {
