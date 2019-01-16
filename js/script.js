@@ -1,5 +1,6 @@
 var button = document.querySelector(".feedback");
 var popup = document.querySelector(".modal-feedback");
+var overlay = document.querySelector(".overlay");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".feedback-form");
 var fname = popup.querySelector("[name=feedback-name]");
@@ -15,6 +16,7 @@ try {
 button.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  overlay.classList.add("overlay-show");
   if (storage) {
     fname.value = storage;
     email.focus();
@@ -25,6 +27,7 @@ button.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  overlay.classList.remove("overlay-show");
   popup.classList.remove("modal-error");
 });
 form.addEventListener("submit", function(evt) {
